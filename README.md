@@ -2,20 +2,20 @@
 
 
 
-> [**MaPLe: Multi-modal Prompt Learning**](https://arxiv.org/abs/2208.02816)<br>
+> [**MaPLe: Multi-modal Prompt Learning**](https://arxiv.org/abs/2210.03117)<br>
 > [Muhammad Uzair Khattak](https://scholar.google.com/citations?user=M6fFL4gAAAAJ&hl=en&authuser=1), [Hanoona Rasheed](https://scholar.google.com/citations?user=yhDdEuEAAAAJ&hl=en&authuser=1&oi=sra), [Muhammad Maaz](https://scholar.google.com/citations?user=vTy9Te8AAAAJ&hl=en&authuser=1&oi=sra), [Salman Khan](https://salman-h-khan.github.io/), [Fahad Shahbaz Khan](https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en)
 
 
 [![Website](https://img.shields.io/badge/Project-Website-87CEEB)](https://muzairkhattak.github.io/multimodal-prompt-learning/)
-[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2207.03482)
+[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2210.03117)
 
 
 
-Official implementation of the paper "[MaPLe: Multi-modal Prompt Learning](arxiv link)".
+Official implementation of the paper "[MaPLe: Multi-modal Prompt Learning](https://arxiv.org/abs/2210.03117)".
 <hr />
 
 # :rocket: News
-* **(Oct 03, 2022)** 
+* **(Oct 06, 2022)** 
   * Training and evaluation codes for [MaPLe](configs/trainers/MaPLe), along with pretrained models are released.
   * The repository also supports
 [CoOp](configs/trainers/CoOp),
@@ -58,13 +58,14 @@ language branches to progressively learn the synergistic behaviour of both modal
 
 [comment]: <> (| Language Prompting            | MaPLe |  [link]&#40;configs/trainers/IVLP/vit_b16_c2_ep5_batch4_4ctx_language_only.yaml&#41;      |      |)
 
-| Method                    | Paper                                         |                            Configs                             | Training Scripts |
-|---------------------------|:----------------------------------------------|:--------------------------------------------------------------:|:---------:|
-| MaPLe                     | [arXiv]()                                     | [link](configs/trainers/MaPLe/vit_b16_c2_ep5_batch4_2ctx.yaml) |  [link](scripts/maple)    |
-| CoOp                      | [IJCV 2022](https://arxiv.org/abs/2109.01134) |                 [link](configs/trainers/CoOp)                  |  [link](scripts/coop)    |
-| Co-CoOp                   | [CVPR 2022](https://arxiv.org/abs/2203.05557) |                [link](configs/trainers/CoCoOp)                 |  [link](scripts/cocoop)  |
-| Vision Prompting          | -                                             |                      [link](configs/trainers/VPT/vit_b16_c2_ep5_batch4_4.yaml)                       |  [link](scripts/vpt)     |
-| Independent V-L Prompting | -                                             | [link](configs/trainers/IVLP/vit_b16_c2_ep5_batch4_2+2ctx.yaml) |  [link](scripts/independent-vlp)    |
+| Method                    | Paper                                         |                             Configs                             |          Training Scripts          |
+|---------------------------|:----------------------------------------------|:---------------------------------------------------------------:|:----------------------------------:|
+| MaPLe                     | [arXiv](https://arxiv.org/abs/2210.03117)                                     | [link](configs/trainers/MaPLe/vit_b16_c2_ep5_batch4_2ctx.yaml)  |       [link](scripts/maple)        |
+| CoOp                      | [IJCV 2022](https://arxiv.org/abs/2109.01134) |                  [link](configs/trainers/CoOp)                  |        [link](scripts/coop)        |
+| Co-CoOp                   | [CVPR 2022](https://arxiv.org/abs/2203.05557) |                 [link](configs/trainers/CoCoOp)                 |       [link](scripts/cocoop)       |
+| Deep Vision Prompting     | -                                             |    [link](configs/trainers/VPT/vit_b16_c2_ep5_batch4_4.yaml)    |        [link](scripts/vpt)         |
+| Deep Language Prompting   | -                                             |                 [link](configs/trainers/IVLP/vit_b16_c2_ep5_batch4_4ctx_language_only.yaml)                  | [link](scripts/language-prompting) |
+| Independent V-L Prompting | -                                             | [link](configs/trainers/IVLP/vit_b16_c2_ep5_batch4_2+2ctx.yaml) |  [link](scripts/independent-vlp)   |
 
 <hr />
 
@@ -77,7 +78,7 @@ Results reported below show accuracy for base and novel classes for across 11 re
 | [CLIP](https://arxiv.org/abs/2103.00020)                  |   69.34   |   74.22    |   71.70   |   -    |  
 | [CoOp](https://arxiv.org/abs/2109.01134)                  | **82.69** |   63.22    |   71.66   |  200   | 
 | [CoCoOp](https://arxiv.org/abs/2203.05557) |   80.47   |   71.69    |   75.83   |   10   | 
-| [MaPLe (ours)]()  |   82.28   | **75.14**  | **78.55** |   5    |  
+| [MaPLe (ours)](https://arxiv.org/abs/2210.03117)  |   82.28   | **75.14**  | **78.55** |   5    |  
 
 ## Installation 
 For installation and other package requirements, please follow the instructions detailed in [INSTALL.md](docs/INSTALL.md). 
@@ -88,12 +89,12 @@ Please follow the instructions at [DATASETS.md](docs/DATASETS.md) to prepare all
 ## Model Zoo
 
 ### Vision-Language prompting methods
-| Name  (configs)                                                                           | Base Acc. | Novel Acc. |    HM     | Epochs |                                         Model / Logs                                         |
-|-------------------------------------------------------------------------------------------|:---------:|:----------:|:---------:|:------:|:--------------------------------------------------------------------------------------------:|
-| [Vision Prompting](configs/trainers/VPT/vit_b16_c2_ep5_batch4_4.yaml)                     |   80.24   |   73.43    |   76.68   |   5    |        [link](https://drive.google.com/drive/folders/1zJnaod8UVvo1HuxNzymLhBBS_OHq6cYp?usp=sharing)                                                                                      | 
-| [Language Prompting](configs/trainers/IVLP/vit_b16_c2_ep5_batch4_4ctx_language_only.yaml) |   81.72   |   73.81    |   77.56   |   5    | [link](https://drive.google.com/drive/folders/1PPLtvQIGprRUyxPiTwOSEh_oQ46zQfCN?usp=sharing) |
-| [Independent V-L Prompting](configs/trainers/VLP/vit_b16_c2_ep5_batch4_8+4ctx.yaml)       |   82.15   |   74.07    |   77.90   |   5    | [link](https://drive.google.com/drive/folders/14NxzrRirK2GfyfWajsEGDiWa2suJoTBW?usp=sharing) |
-| [MaPLe](configs/trainers/MaPLe/vit_b16_c2_ep5_batch4_2ctx.yaml)                           | **82.28** | **75.14**  | **78.55** |   5    | [link](https://drive.google.com/drive/folders/1EvuvgR8566bL0T7ucvAL3LFVwuUPMRas?usp=sharing) |
+| Name  (configs)                                                                                | Base Acc. | Novel Acc. |    HM     | Epochs |                                         Model / Logs                                         |
+|------------------------------------------------------------------------------------------------|:---------:|:----------:|:---------:|:------:|:--------------------------------------------------------------------------------------------:|
+| [Deep Vision Prompting](configs/trainers/VPT/vit_b16_c2_ep5_batch4_4.yaml)                     |   80.24   |   73.43    |   76.68   |   5    |        [link](https://drive.google.com/drive/folders/1zJnaod8UVvo1HuxNzymLhBBS_OHq6cYp?usp=sharing)                                                                                      | 
+| [Deep Language Prompting](configs/trainers/IVLP/vit_b16_c2_ep5_batch4_4ctx_language_only.yaml) |   81.72   |   73.81    |   77.56   |   5    | [link](https://drive.google.com/drive/folders/1PPLtvQIGprRUyxPiTwOSEh_oQ46zQfCN?usp=sharing) |
+| [Independent V-L Prompting](configs/trainers/IVLP/vit_b16_c2_ep5_batch4_2+2ctx.yaml)           |   82.15   |   74.07    |   77.90   |   5    | [link](https://drive.google.com/drive/folders/14NxzrRirK2GfyfWajsEGDiWa2suJoTBW?usp=sharing) |
+| [MaPLe](configs/trainers/MaPLe/vit_b16_c2_ep5_batch4_2ctx.yaml)                                | **82.28** | **75.14**  | **78.55** |   5    | [link](https://drive.google.com/drive/folders/1EvuvgR8566bL0T7ucvAL3LFVwuUPMRas?usp=sharing) |
 
 
 ## Training and Evaluation
@@ -108,7 +109,7 @@ If you use our work, please consider citing:
 @article{khattak2022MaPLe,
     title={MaPLe: Multi-modal Prompt Learning},
     author={khattak, Muhammad Uzair and Rasheed, Hanoona and Maaz, Muhammad and Khan, Salman and Khan, Fahad Shahbaz},
-    journal={add link},
+    journal={https://arxiv.org/abs/2210.03117},
     year={2022}
 }
 ```
