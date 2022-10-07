@@ -4,12 +4,18 @@ We provide bash scripts in [scripts/](../scripts) for each prompting variant inc
 Make sure to configure the dataset paths in environment variable `DATA` and run the commands from the main directory `MaPLe/`.
 Below we provide training and evaluation instructions for MaPLe. The same instructions applies for all other variants including *Vision (VPT), Language and independent V-L prompting* .
 
+
+### Training time and compute
+We train MaPLe on each dataset with a batch size of 4 using a **single** NVIDIA A100 GPU.
+Training MaPle on ImageNet for 5 epochs takes 1 hour for a single seed. So results for 3 seeds takes around 3 hours. For all remaining 10 datasets, it combinedly takes around 4 hours (for all 3 seeds) on a single A100 GPU. To ease reproduction of MaPLe results, we have provided [training logs](https://drive.google.com/drive/folders/1EvuvgR8566bL0T7ucvAL3LFVwuUPMRas?usp=sharing) for all datasets. 
+
 ## MaPLe
 
 #### (1) Base-to-Novel class generalization setting
 The default training settings are provided in config file at `configs/trainers/MaPLe/vit_b16_c2_ep5_batch4_2ctx.yaml`. All hyper-parameters such as prompt length, prompt depth, etc., can be modified using this config file.
 
 Below, we provide instructions to train MaPLe on imagenet. 
+
 
 ```bash
 # Other possible dataset values includes [caltech101, food101, dtd, ucf101, oxford_flowers, oxford_pets, fgvc_aircraft, stanford_cars, sun397, eurosat]
