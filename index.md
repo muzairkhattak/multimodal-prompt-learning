@@ -21,7 +21,7 @@ Pre-trained vision-language (V-L) models such as CLIP have shown excellent gener
  
 ## Prompting CLIP via Vision-Language prompts
 
-<p align="justify"> Table below compares different possible prompting design choices as an ablation for our proposed branch-aware multi-modal prompting, MaPLe. Results reported below show accuracy for base and novel classes for across 11 recognition datasets averaged over 3 seeds. </p>
+<p align="justify"> Table below compares different possible prompting design choices as an ablation for our proposed branch-aware multi-modal prompting, MaPLe. Results reported below show accuracy for base and novel classes which are averaged across 11 recognition datasets over 3 seeds. </p>
 <br> 
 <center>
 <table  border="0">
@@ -127,7 +127,7 @@ Co-CoOp, and MaPLe on 3 diverse image recognition datasets. MaPLe shows better s
 
 ## Effectiveness of MaPLe
 
-<p align="justify">Below figure shows MaPLe per class analysis for selected datasets in the order of increasing diversity (distribution gap w.r.t CLIP pretraining dataset, ie generic objects). The overall trend indicates that MaPLe is more effective than Co-CoOp as the diversity of the dataset increases. </p>
+<p align="justify">Below figure shows percentage of classes where <b>MaPLe > Co-CoOp</b> for selected datasets in the order of increasing diversity (distribution gap w.r.t CLIP pretraining dataset, ie generic objects). The overall trend indicates that MaPLe is more effective than Co-CoOp as the diversity of the dataset increases. </p>
 
 <center> <img src="docs/per_class_analysis.png" width="600"> </center>
 
@@ -140,7 +140,7 @@ If you like our work, please consider citing us.
 @article{khattak2022MaPLe,
     title={MaPLe: Multi-modal Prompt Learning},
     author={khattak, Muhammad Uzair and Rasheed, Hanoona and Maaz, Muhammad and Khan, Salman and Khan, Fahad Shahbaz},
-    journal={add link},
+    journal={https://arxiv.org/abs/2210.03117},
     year={2022}
 }
 ```
