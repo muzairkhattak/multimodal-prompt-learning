@@ -34,9 +34,9 @@ cd ..
 * Clone MaPLe code repository and install requirements
 ```bash
 # Clone MaPLe code base
-git clone https://github.com/muzairkhattak/MaPLe.git
+git clone https://github.com/muzairkhattak/multimodal-prompt-learning.git
 
-cd maple/
+cd multimodal-prompt-learning/
 # Install requirements
 
 pip install -r requirements.txt
