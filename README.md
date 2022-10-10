@@ -133,7 +133,7 @@ If you use our work, please consider citing:
 ```
 
 ## Contact
-If you have any questions, please create an issue on this repository or contact at uzair.khattak@mbzuai.ac.ae.
+If you have any questions, please create an issue on this repository or contact at uzair.khattak@mbzuai.ac.ae or hanoona.bangalath@mbzuai.ac.ae .
 
 
 ## Acknowledgements
