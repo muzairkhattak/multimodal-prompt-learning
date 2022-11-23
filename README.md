@@ -68,7 +68,7 @@ architectures.
 1) **Multi-modal prompt learning:** Adapt CLIP using a novel prompting technique which prompts both the vision and language branch of CLIP.
 2) **Vision and Language Prompt Coupling:** Explicitly condition vision prompts on their language counterparts and act as a bridge
 between the two modalities by allowing mutual propagation of gradients to promote synergy.
-3) **Deep Prompting:** Learn prompts across multiple transformer blocks in both vision and
+3) **Vision and Language Deep Prompting:** Learn multi-modal prompts across multiple transformer blocks in both vision and
 language branches to progressively learn the synergistic behaviour of both modalities.
 
 
