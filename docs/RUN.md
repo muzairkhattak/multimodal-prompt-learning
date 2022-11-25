@@ -1,7 +1,7 @@
 # Training and Evaluation
 
 We provide bash scripts in [scripts/](../scripts) for each prompting variant including MaPLe, vision, language and independent V-L prompting.
-Make sure to configure the dataset paths in environment variable `DATA` and run the commands from the main directory `MaPLe/`.
+Make sure to configure the dataset paths in environment variable `DATA` and run the commands from the main directory `multimodal-prompt-learning/`.
 Below we provide training and evaluation instructions for MaPLe. The same instructions applies for all other variants including *Vision (VPT), Language and independent V-L prompting* .
 
 
