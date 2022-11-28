@@ -40,4 +40,7 @@ cd multimodal-prompt-learning/
 # Install requirements
 
 pip install -r requirements.txt
+
+# Update setuptools package 
+pip install setuptools==59.5.0
 ```
