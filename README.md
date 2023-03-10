@@ -1,4 +1,4 @@
-# MaPLe: Multi-modal Prompt Learning
+# MaPLe: Multi-modal Prompt Learning [CVPR 2023]
 
 
 
@@ -33,6 +33,8 @@ Domain Generalization:
 <hr />
 
 # :rocket: News
+* **(Feb 28, 2023)**
+  * Paper accepted at CVPR 2023 :tada: 
 * **(Oct 06, 2022)** 
   * Training and evaluation codes for [MaPLe](configs/trainers/MaPLe), along with pretrained models are released.
   * The repository also supports
@@ -124,16 +126,16 @@ Please refer to the [RUN.md](docs/RUN.md) for detailed instructions on training,
 ## Citation
 If you use our work, please consider citing:
 ```bibtex
-@article{khattak2022MaPLe,
+@inproceedings{khattakMaPLe,
     title={MaPLe: Multi-modal Prompt Learning},
     author={khattak, Muhammad Uzair and Rasheed, Hanoona and Maaz, Muhammad and Khan, Salman and Khan, Fahad Shahbaz},
-    journal={arXiv:2210.03117},
-    year={2022}
+    booktitle={The IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+    year={2023}
 }
 ```
 
 ## Contact
-If you have any questions, please create an issue on this repository or contact at uzair.khattak@mbzuai.ac.ae or hanoona.bangalath@mbzuai.ac.ae .
+If you have any questions, please create an issue on this repository or contact at uzair.khattak@mbzuai.ac.ae or hanoona.bangalath@mbzuai.ac.ae.
 
 
 ## Acknowledgements
