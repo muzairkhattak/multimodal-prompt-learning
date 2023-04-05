@@ -117,11 +117,11 @@ We provide cross-dataset config for MaPLe: `configs/MaPLe/vit_b16_c2_ep5_batch4_
 
 ```bash
 # seed=1 
-bash scripts/maple/xd_train_maple.sh 1
+bash scripts/maple/xd_train_maple.sh imagenet 1
 # seed=2 
-bash scripts/maple/xd_train_maple.sh 2
+bash scripts/maple/xd_train_maple.sh imagenet 2
 # seed=3 
-bash scripts/maple/xd_train_maple.sh 3
+bash scripts/maple/xd_train_maple.sh imagenet 3
 ```
 
 * Now evaluate imageNet model on downstream datasets.
