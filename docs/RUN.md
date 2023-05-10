@@ -129,9 +129,9 @@ bash scripts/maple/xd_train_maple.sh imagenet 3
 ```bash
 for SEED in 1 2 3
 do
-    bash scripts/maple/xd_train_maple.sh caltech101 ${SEED}
-    bash scripts/maple/xd_train_maple.sh oxford_pets ${SEED}
-    bash scripts/maple/xd_train_maple.sh stanford_cars ${SEED}
+    bash scripts/maple/xd_test_maple.sh caltech101 ${SEED}
+    bash scripts/maple/xd_test_maple.sh oxford_pets ${SEED}
+    bash scripts/maple/xd_test_maple.sh stanford_cars ${SEED}
 done
 ```
 
@@ -142,10 +142,10 @@ We use imagenet trained MaPLe model for domain generalization experiments. The s
 ```bash
 for SEED in 1 2 3
 do
-    bash scripts/maple/xd_train_maple.sh imagenetv2 ${SEED}
-    bash scripts/maple/xd_train_maple.sh imagenet_sketch ${SEED}
-    bash scripts/maple/xd_train_maple.sh imagenet_a ${SEED}
-    bash scripts/maple/xd_train_maple.sh imagenet_r ${SEED}
+    bash scripts/maple/xd_test_maple.sh imagenetv2 ${SEED}
+    bash scripts/maple/xd_test_maple.sh imagenet_sketch ${SEED}
+    bash scripts/maple/xd_test_maple.sh imagenet_a ${SEED}
+    bash scripts/maple/xd_test_maple.sh imagenet_r ${SEED}
 done
 ```
 
