@@ -166,7 +166,7 @@ imagenet
 |–– seed3/
 ```
 
-Now use the evaluation script `scripts/maple/reproduce_maple.sh` and run the commands below to calculate the averaged results:
+Now use the evaluation script `scripts/maple/reproduce_maple_xd.sh` and run the commands below to calculate the averaged results:
 ```bash
 # evaluate on given dataset for SEED1
 bash scripts/maple/reproduce_maple_xd.sh food101 1 /path/to/imagenet/weights/folder
@@ -179,7 +179,7 @@ bash scripts/maple/reproduce_maple_xd.sh food101 3 /path/to/imagenet/weights/fol
 This should evaluate and save the log files in `output/` directory. To obtain the averaged results, run:
 
 ```bash
-# prints averaged results for imagenet dataset
+# prints averaged results for food101 dataset
 python parse_test_res.py output/evaluation/MaPLe/vit_b16_c2_ep5_batch4_2ctx_cross_datasets_16shots/food101 --test-log
 ```
 
