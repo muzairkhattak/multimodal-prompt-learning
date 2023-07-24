@@ -34,6 +34,8 @@ Domain Generalization:
 <hr />
 
 # :rocket: News
+* **(July 17, 2023)**
+  * Our work on proposing a [Self-Regularization Framework for Prompt Learning](https://muzairkhattak.github.io/PromptSRC/) has been accepted to ICCV-2023  :tada: The code is also publicly available [here](https://github.com/muzairkhattak/PromptSRC)!
 * **(Feb 28, 2023)**
   * Paper accepted at CVPR 2023 :tada: 
 * **(Oct 06, 2022)** 

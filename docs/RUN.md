@@ -2,7 +2,7 @@
 
 We provide bash scripts in [scripts/](../scripts) for each prompting variant including MaPLe, vision, language and independent V-L prompting.
 Make sure to configure the dataset paths in environment variable `DATA` and run the commands from the main directory `multimodal-prompt-learning/`.
-Below we provide training and evaluation instructions for MaPLe. The same instructions applies for all other variants including *Vision (VPT), Language and independent V-L prompting* .
+Below we provide training and evaluation instructions for MaPLe. The same instructions applies for all other variants including *Vision (VPT), Language and independent V-L prompting*.
 
 
 ### Training time and compute
@@ -111,7 +111,7 @@ python parse_test_res.py output/base2new/test_new/imagenet/shots_16/MaPLe/vit_b1
 
 
 #### (2) Cross-Dataset Transfer
-We provide instructions to train MaPLe on imageNet using all 1000 classes and then evaluating it directory on new downstream datasets.
+We provide instructions to train MaPLe on imageNet using all 1000 classes and then evaluating it directly on new downstream datasets.
 We provide cross-dataset config for MaPLe: `configs/MaPLe/vit_b16_c2_ep5_batch4_2ctx_cross_datasets.yaml`.
 * Firstly, train MaPLe on imagenet in few-shot manner (for all 3 seeds).
 
