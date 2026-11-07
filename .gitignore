@@ -1,0 +1,22 @@
+# Run outputs and logs
+output/
+*.out
+*.log
+
+# Datasets and model weights
+/data/
+*.pth
+*.pth.tar
+*.pt
+*.zip
+*.tar.gz
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Local tooling
+.DS_Store
+.vscode/
+.claude/
