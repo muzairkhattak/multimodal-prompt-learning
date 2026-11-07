@@ -25,7 +25,7 @@ cd multimodal-prompt-learning
 **2. Create the environment**
 
 ```bash
-conda create -y -n maple python=3.8
+conda create -y -n maple python=3.8.20 pip=24.2
 conda activate maple
 pip install -r requirements.txt
 
