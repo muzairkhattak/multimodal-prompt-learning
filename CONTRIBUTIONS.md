@@ -1,5 +1,11 @@
 Base: github.com/muzairkhattak/multimodal-prompt-learning @ 69bce21ae8eda80ad6187534b2dce09cf6c59e17
 
+Dependency: github.com/KaiyangZhou/Dassl.pytorch @ c61a1b570ac6333bd50fb5ae06aea59002fb20bb
+
 | Component | Origin | What I changed |
 | --- | --- | --- |
-| Training loop and trainers (MaPLe, IVLP, CoCoOp) | Base repo @ <hash> | Unmodified |
+| Training loop and trainers (MaPLe, IVLP, CoCoOp) | Base repo @ 69bce21 | Unmodified |
+| `.gitignore` | New | Keeps outputs, logs, datasets and checkpoints out of git |
+| `tools/data/common.sh` | New | Download, checksum and image count helpers shared by the download scripts |
+| `tools/data/download_domainnet.sh` | New | Downloads the 6 DomainNet styles and the cleaned train/test lists, prints image counts |
+| `tools/data/download_eurosat_dtd_aircraft.sh` | New | Downloads EuroSAT, DTD and FGVC Aircraft into the `docs/DATASETS.md` layout; EuroSAT comes from the authors' Zenodo record because the documented host timed out |
