@@ -13,3 +13,4 @@ Dependency: github.com/KaiyangZhou/Dassl.pytorch @ c61a1b570ac6333bd50fb5ae06aea
 | `slurm/test_env.sbatch` | New | One GPU, 10 minute GAIVI job that runs the environment check |
 | `requirements.txt` | Base repo @ 69bce21 | Replaced its 3 lines with exact pins from `environment_freeze.txt` |
 | `environment_freeze.txt` | New | `conda list` export of the environment on GAIVI |
+| `README.md` | New | Project summary, pinned commits and GAIVI setup. The base repo's README is kept at `docs/ORIGINAL_README.md` |
