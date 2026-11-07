@@ -9,3 +9,7 @@ Dependency: github.com/KaiyangZhou/Dassl.pytorch @ c61a1b570ac6333bd50fb5ae06aea
 | `tools/data/common.sh` | New | Download, checksum and image count helpers shared by the download scripts |
 | `tools/data/download_domainnet.sh` | New | Downloads the 6 DomainNet styles and the cleaned train/test lists, prints image counts |
 | `tools/data/download_eurosat_dtd_aircraft.sh` | New | Downloads EuroSAT, DTD and FGVC Aircraft into the `docs/DATASETS.md` layout; EuroSAT comes from the authors' Zenodo record because the documented host timed out |
+| `tools/check_env.py` | New | Prints torch and CUDA versions, runs CLIP ViT-B/16 once on the GPU |
+| `slurm/test_env.sbatch` | New | One GPU, 10 minute GAIVI job that runs the environment check |
+| `requirements.txt` | Base repo @ 69bce21 | Replaced its 3 lines with exact pins from `environment_freeze.txt` |
+| `environment_freeze.txt` | New | `conda list` export of the environment on GAIVI |
