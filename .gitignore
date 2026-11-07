@@ -4,7 +4,8 @@ output/
 *.log
 
 # Datasets and model weights
-/data/
+/data/*
+!/data/README.md
 *.pth
 *.pth.tar
 *.pt

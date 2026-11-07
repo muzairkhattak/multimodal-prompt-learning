@@ -79,3 +79,6 @@ nohup bash tools/data/download_eurosat_dtd_aircraft.sh > download_eurosat_dtd_ai
 - `on_disk` is larger than `train` + `test`, because the zips also hold the images that the cleaned
   lists removed.
 - `missing` must be 0 for every style.
+
+The cleaned-list choice, the classes missing from the painting lists, and the classes with few
+training images are recorded in [data/README.md](data/README.md).
